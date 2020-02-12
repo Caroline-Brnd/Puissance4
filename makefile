@@ -3,7 +3,7 @@ CFLAGS=-Wall
 SRC=puissance4.c main.c
 OBJ=$(SRC:.c=.o)
 
-dames : $(OBJ) puissance4.h
+puissance4 : $(OBJ) puissance4.h
 	$(CC) -o $@ $(OBJ)
 
 %.o : %.c
